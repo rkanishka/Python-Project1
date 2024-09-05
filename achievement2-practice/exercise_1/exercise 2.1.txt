@@ -1,0 +1,38 @@
+1)Write two to three sentences on why Django is so popular among web developers.
+=>1) Django is built with security in mind ,allowing secure by design implementation with built in automated encryption.
+2)Django is open source and has a huge community of contributor easy to get support if you need.
+3)Django MVT architecture ensure development is fast and easy.
+
+2) list five large companies that use Django. Specify what the company’s product or service is and what they use Django for.
+=> 1) Instagram is popular for photo and Vedio sharing social networking platform .The company uses Django extensively for its web application, helping to handle the massive scale of user data, content processing, and backend services.
+
+2) Spotify is a digital music streaming service offering millions songs and podcasts.The company employs Django for various backend services and machine learning tasks.
+
+3)Mozilla is the non-profit organization behind the Firefox web browser.These platforms benefit from Django's content management capabilities and its ability to handle large amounts of technical documentation.
+
+4) National Geographic a renowned media company focusing on science, exploration, and adventure, utilizes Django for its content management system.
+
+5)Bitbucket, a web-based version control repository hosting service owned by Atlassian, uses Django in its tech stack.
+
+
+3)=>a)You need to develop a web application with multiple users.
+Use Django:yes
+Django is an excellent choice for multi-user web applications.It provide built-in user authentication,authorization and session management systems.
+
+B) you need fast deployment and the ability to make changes a you proceed
+Use Django:yes
+Django follow the batteries included philosophy providing many out of the box features that speed up development.
+
+C)you need to build a very basic application which doesn’t require any database access or file operation.
+Us eDjango: probably not
+While Django can be used for simple application it might be overkill for a basic app without database or file operations.
+
+D) you want to build an application from scratch and want a lot of control over how it works.
+
+Use Django:it depends 
+Django is highly customizable and allow for a great deal of control, but it also comes with its own structure and conventions
+
+E) you are about to start working on big project an dare afraid of getting stuck and needing additional support
+
+Use Django:yes
+Django is an excellent choice for large projects especially when you are concerned about potential roadblock
