@@ -1,4 +1,4 @@
-
+{% extends 'base.html' %}
 
 {% block title %}{{ recipe.name }}{% endblock %}
 
@@ -30,7 +30,7 @@
         <h2>Instructions</h2>
         <ol class="instructions-list">
             {% for step in recipe.steps.all %}
-                <li>{{ step.description }}</li>
+                <li>{{ step.instructions }}</li>
             {% endfor %}
         </ol>
         
