@@ -37,7 +37,7 @@ class Recipe(models.Model):
         super().save(*args, **kwargs)
 
     def get_absolute_url(self):
-        return reverse('recipe_detail', args=[str(self.id)])
+        return reverse('recipes:recipe_detail', args=[str(self.id)])
 
     def __str__(self):
         return self.name

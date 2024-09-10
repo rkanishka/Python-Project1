@@ -1,11 +1,12 @@
 from django.urls import path
-from .views import RecipeListView, RecipeDetailView
+from . import views
 
 app_name = 'recipes'
 
-## Maps the '' address to the home function-based view
 urlpatterns = [
-  path('recipes/', RecipeListView.as_view(), name='list'),
- 
-  path('recipes/<pk>', RecipeDetailView.as_view(), name='detail'),
+    path('', views.home, name='home'),
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout'),
+    path('recipes/', views.recipe_list, name='recipe_list'),
+    path('recipes/<int:pk>/', views.recipe_detail, name='recipe_detail'),
 ]
