@@ -37,7 +37,7 @@
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 3rem; /* Adjusted size for prominence */
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
@@ -48,7 +48,7 @@
             line-height: 1.6;
         }
 
-        .btn {
+        .login_btn {
             background-color: #ff6b6b;
             color: white;
             padding: 15px 30px;
@@ -58,21 +58,12 @@
             text-decoration: none;
             transition: all 0.3s ease;
             display: inline-block;
-            margin: 0 10px;
         }
 
-        .btn:hover {
+        .login_btn:hover {
             background-color: #ee5253;
             transform: translateY(-3px);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
-
-        .btn-secondary {
-            background-color: #4a69bd;
-        }
-
-        .btn-secondary:hover {
-            background-color: #3c55a5;
         }
     </style>
 </head>
@@ -80,14 +71,9 @@
 <body>
     <div class="background">
         <div class="content">
-            <h1>Welcome to Recipe App</h1>
+            <h1>Welcome to Recipe App</h1> <!-- Updated heading -->
             <p>Discover easy and delicious recipes for everyone. Whether you want quick meals or special dishes, we have something for you. Start cooking and enjoy great food!</p>
-            {% if user.is_authenticated %}
-                <a href="{% url 'recipes:recipe_list' %}" class="btn">Explore Recipes</a>
-                <a href="{% url 'recipes:logout' %}" class="btn btn-secondary">Logout</a>
-            {% else %}
-                <a href="{% url 'recipes:login' %}" class="btn">Login</a>
-            {% endif %}
+            <a href="#" class="login_btn">Explore Recipes</a>
         </div>
     </div>
 </body>
